@@ -5,6 +5,7 @@ import edu.escuelaing.arep.statistics.StatisticUtils;
 import spark.Request;
 import spark.Response;
 
+import java.util.Arrays;
 import java.util.List;
 
 import static spark.Spark.*;
@@ -83,7 +84,7 @@ public class SparkWebApp {
                 "<body style=\"background-color:#d9ffb3\">\n" +
                 "  <div style=\"margin:auto\">\n" +
                 "    <h1>Mean and Standard Deviation Calculator</h1>\n" +
-                "    The results for the data set <b>"+numbersParam+"</b>  are:\n" +
+                "    The results for the data set <b>"+ Arrays.toString(numbers)+"</b>  are:\n" +
                 "    <table style=\"width:25%;border: 2px solid black\">\n" +
                 "      <tr >\n" +
                 "        <th style=\"border:1px solid black\">Mean</th>\n" +
