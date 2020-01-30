@@ -1,0 +1,42 @@
+@startuml class-diagram
+class SparkWebApp {
+ + {static} main(args: String[]): void
+ - {static} indexPage(req: Request, res: Response) : String
+ - {static} calculatePage(req: Request, res: Response) : String
+ - {static} getPort(): int
+}
+
+class Node<T> {
+    - data: T
+    + _(data: T, nextNode: Node<T>): Node
+    + getData(): T
+    + setNextNode(nextNode: Node<T>): void
+    + getNextNode(): Node
+}
+
+class LinkedList<T> {
+    - size: int
+    + _(): LinkedList
+    + add(data: T): boolean
+    + get(i: int): T
+    + size(): int
+    + isEmpty(): boolean
+    + iterator(): Iterator
+    + addAll(collection: Collection<? extends T>): boolean
+    + remove(i: int): T
+}
+
+class StaticticUtils {
+    + {static} calculateMean(list: List<Double>): double
+    + {static} calculateStandardDeviation(list: List<Double>): double
+}
+
+Node --> Node: nextNode
+
+LinkedList -right-> Node: head
+LinkedList -right-> Node: tail
+
+SparkWebApp .down.> LinkedList: Has
+SparkWebApp .right.> StaticticUtils: Uses
+
+@enduml

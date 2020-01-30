@@ -1,0 +1,16 @@
+@startuml depl
+cloud HerokuServer{
+    node WebServer{
+        artifact SparkWebApp
+    }
+}
+
+node User{
+    node WebBrowser{
+     artifact HTMLPlayer
+    }
+}
+
+User -up-> HerokuServer: port 80
+
+@enduml
