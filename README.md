@@ -132,7 +132,7 @@ public class StatisticUtilsTest {
 }
 ```
 ## Deployment
-To deploy this project in Heroku, clone this repository and in the folder `AREP-Taller02` type in the terminal:
+To deploy this project in Heroku, clone this repository and in the folder `AREP-Taller02`.
 
 Create the Heroku app: 
 ```
@@ -171,4 +171,4 @@ The resulting JavaDocs will end in `target/site`.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the GNU License - see the [LICENSE.md](LICENSE.md) file for details.
