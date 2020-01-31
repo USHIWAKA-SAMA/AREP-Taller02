@@ -147,7 +147,7 @@ heroku open
 
 
 ## Design Document
-The document describing the desing is
+The document describing the desing is [DESIGN.pdf](DESIGN.pdf)
 
 ## JavaDocs
 JavaDocs are available in the `javadocs` folder. Opening `javadocs/index.html` in the browser will display them.
