@@ -5,6 +5,9 @@ This web application calculates the mean and the standard deviation of a given s
 The application is deployed here:
 [Heroku deployment](https://quiet-wave-52141.herokuapp.com/)
 
+##### Status
+[![CircleCI](https://circleci.com/gh/JulianBenitez99/AREP-Taller02.svg?style=svg)](https://circleci.com/gh/JulianBenitez99/AREP-Taller02)
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
